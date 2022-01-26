@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: techtalk-demo-app
-        image: balakrishna625/techtalk:1.0
+        image: balakrishna625/techtalk:1.1
         ports:
         - containerPort: 8080
