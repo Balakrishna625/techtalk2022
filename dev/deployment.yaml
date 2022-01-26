@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: techtalk-demo-app
+spec:
+  selector:
+    matchLabels:
+      app: techtalk-demo-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: techtalk-demo-app
+    spec:
+      containers:
+      - name: techtalk-demo-app
+        image: balakrishna625/techtalk:1.0
+        ports:
+        - containerPort: 8080
